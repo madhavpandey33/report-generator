@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring Boot Thymeleaf Hello World Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" th:href="@{/css/main.css}" href="../../css/main.css" />
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<p class="navbar-brand">Service Report</p>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="starter-template">
+			<h4>Click the button to see the report</h4>
+			<!-- <form th:action="@{/generateReport}" method="GET">
+				<button type="submit" id="submitButton">Generate Report</button>
+			</form> -->
+			<form action="#" th:action="@{/generateReport}" method="get">
+				<!-- <p>
+					Id: <input type="text" th:field="*{id}" />
+				</p>
+				<p>
+					First Name: <input type="text" th:field="*{firstname}" />
+				</p>
+				<p>
+					Last Name: <input type="text" th:field="*{lastname}" />
+				</p> -->
+				<p>
+					<input type="submit" value="Submit"/> 
+					
+					<!-- <input type="reset" value="Reset" /> -->
+				</p>
+			</form>
+		</div>
+	</div>
+	<!-- /.container -->
+	<script type="text/javascript" src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
